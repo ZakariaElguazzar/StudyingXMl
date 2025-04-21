@@ -1,0 +1,24 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    
+    <!-- Define the CdType complex type -->
+    <xs:complexType name="CdType">
+        <xs:sequence>
+            <xs:element name="artiste" type="xs:string"/>
+            <xs:element name="titre" type="xs:string"/>
+            <xs:element name="style" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    
+    <!-- Define the CdThequeType complex type -->
+    <xs:complexType name="CdThequeType">
+        <xs:sequence>
+            <xs:element name="cd" type="CdType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+        <xs:attribute name="date" type="xs:string" use="required"/>
+        <xs:attribute name="proprietaire" type="xs:string" use="required"/>
+    </xs:complexType>
+
+    <xs:element name="cdtheque" type="CdThequeType"/>
+    <xs:element name="cd" type="CdType"/>
+
+</xs:schema>

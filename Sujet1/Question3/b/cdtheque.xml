@@ -1,0 +1,14 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<cdtheque date="2024-12-06" proprietaire="YY" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xsi:noNamespaceSchemaLocation="cdtheque.xsd">
+    <cd>
+        <artiste>HH</artiste>
+        <titre>HH HH</titre>
+        <style>HH</style>
+    </cd>
+    <cd>
+        <artiste>HH</artiste>
+        <titre>HH HH</titre>
+        <style>HH</style>
+    </cd>
+</cdtheque>

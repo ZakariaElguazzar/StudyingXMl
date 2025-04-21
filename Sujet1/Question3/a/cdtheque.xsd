@@ -1,0 +1,16 @@
+<xs:schema xmlns:xs="http://www.w3.org/2001/XMLSchema">
+    <xs:element name="cd" type="CdType"/>
+    <xs:complexType name="CdType">
+        <xs:sequence>
+            <xs:element name="artiste" type="xs:string"/>
+            <xs:element name="titre" type="xs:string"/>
+            <xs:element name="style" type="xs:string" minOccurs="0" maxOccurs="1"/>
+        </xs:sequence>
+    </xs:complexType>
+    <xs:element name="cdtheque" type="CdthequeType"/>
+    <xs:complexType  name="CdthequeType">
+        <xs:sequence>
+            <xs:element name="cd" type="CdType" minOccurs="0" maxOccurs="unbounded"/>
+        </xs:sequence>
+    </xs:complexType>
+</xs:schema>

@@ -1,0 +1,5 @@
+<!ELEMENT cdtheque (cd*)>
+<!ELEMENT cd (titre, artiste, style?)>
+<!ELEMENT titre (#PCDATA)>
+<!ELEMENT artiste (#PCDATA)>
+<!ELEMENT style (#PCDATA)>
